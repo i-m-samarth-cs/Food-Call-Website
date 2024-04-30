@@ -1,0 +1,207 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+   
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    
+    padding: 10px 90px;
+    border: 8px solid #0e0606;
+    
+    background-color: brown;
+    color: white;
+    margin: 0px 587px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+img {
+    border: 5px solid #555;
+  }
+  
+  
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  
+  }
+  h1 { 
+       position: relative; 
+      left: 330px;
+      bottom:23px
+      
+  }
+  h1.first
+   { 
+       position: relative; 
+      left: 330px;
+      bottom:13px
+      
+  }
+  h2 { 
+       position: relative; 
+      left: 330px;
+      bottom:13px
+      
+  }
+  
+  .h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  h3 { 
+       position: relative; 
+      left: 330px;
+      bottom:23px
+      
+  }
+  .button {
+    background-color: #FF7070;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button5 {border-radius: 50%;}
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .blinking{
+      animation:blinkingText 1.2s infinite;
+  }
+  @keyframes blinkingText{
+      0%{     color:  #ccccff;    }
+      49%{    color:  #990099; }
+      60%{    color: yellow; }
+      75%{	color: #00ff00}
+      99%{    color:#ff9900;  }
+      100%{   color:  #990099;    }
+  }
+  
